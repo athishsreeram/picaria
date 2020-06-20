@@ -68,3 +68,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+Co-ordinates
+8 8     295 295     584 584 
+    143 143     442 442 
+0 0     294 294     591 591 
+    147 147     444 444 
+1 1     296 296     594 594
+
+Matrix
+10      13      15
+    21      24
+30      33      35
+    41      44
+40      43      45
