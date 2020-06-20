@@ -9,7 +9,8 @@ class ColoredRect extends React.Component {
     isDragging: false,
     color: '',
     x: 50,
-    y: 50
+    y: 50,
+    name: ''
   };
 
   handleClick = () => {
@@ -36,9 +37,13 @@ class ColoredRect extends React.Component {
           this.setState({
             isDragging: false,
             x: e.target.x(),
-            y: e.target.y()
+            y: e.target.y(),
+            color: this.props.color,
+            name: this.props.name
           });
-          console.log(e.target.x() + " " +e.target.x());
+
+          this.props.parentCallback(this.state);
+          
         }}
       />
     );
