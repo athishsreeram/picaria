@@ -6,7 +6,7 @@ import Konva from 'konva';
 class ColoredRect extends React.Component {
   
   state = {
-    isDragging: false,
+    draggable: false,
     color: '',
     x: 50,
     y: 50,
@@ -28,14 +28,9 @@ class ColoredRect extends React.Component {
         fill={this.props.color}
         shadowBlur={5}
         draggable={this.props.draggable}
-        onDragStart={() => {
-          this.setState({
-            isDragging: true
-          });
-        }}
         onDragEnd={e => {
           this.setState({
-            isDragging: false,
+            draggable: false,
             x: e.target.x(),
             y: e.target.y(),
             color: this.props.color,
